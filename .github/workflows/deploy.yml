@@ -26,11 +26,6 @@ jobs:
       with:
         version: '>= 363.0.0'
 
-    # Configure Docker with Credentials
-    - name: Configure Docker
-      run: |
-        gcloud auth configure-docker
-
     # Build the Docker image
     - name: Build & Publish
       run: |
